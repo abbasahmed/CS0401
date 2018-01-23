@@ -96,8 +96,8 @@ public class Assignment1 {
 				System.out.println("\t3) Update Butterbeer Order");
 				System.out.println("\t4) Check Out");
 
-				int mahOption= input.nextInt();                                                        //For updating Cauldron Cakes order
-				if (mahOption == 1){
+				int myOption= input.nextInt();                                                        //For updating Cauldron Cakes order
+				if (myOption == 1){
 					{
 						if (numberofCauldronCakes==0)
 							System.out.println("No Cauldron Cakes ordered\n");
@@ -127,7 +127,7 @@ public class Assignment1 {
 						System.out.println(" ");
 					}
 				}
-				if (mahOption==2){                                                                       //For updating Chocolate frogs order
+				if (myOption==2){                                                                       //For updating Chocolate frogs order
 					{
 						if (numberOfChocolateFrogs==0)
 							System.out.println("No Chocolate Frogs ordered");
@@ -147,7 +147,7 @@ public class Assignment1 {
 					}
 					numberOfChocolateFrogs=chocFrog+numberOfChocolateFrogs;
 				}
-				if (mahOption==3){                                                                       //For updating Butterbeers ordered
+				if (myOption==3){                                                                       //For updating Butterbeers ordered
 					{
 						if (totalSmallButBeer==0 && totalLargeButBeer1 == 0 && totalLargeButBeer2 == 0)
 							System.out.println("No Butterbeer ordered");
@@ -186,7 +186,7 @@ public class Assignment1 {
 					totalLargeButBeer1=totalLargeButBeer1+largeButBeer1;                      //total large butterbeers for members
 					totalLargeButBeer2=totalLargeButBeer2+largeButBeer2;                      //total large butterbeers for regular customers
 				}
-				if (mahOption==4){                                                            //For checking out
+				if (myOption==4){                                                            //For checking out
 					int specialPrice=0;
 					if (numberofCauldronCakes==0&&numberOfChocolateFrogs==0&&totalSmallButBeer==0&&totalLargeButBeer1==0&&totalLargeButBeer2==0){     //if there's nothing is in the cart
 						System.out.print("There is nothing in your shopping cart. Thanks for stopping by!");
